@@ -1,0 +1,7 @@
+Package: mcpil
+Version: ${VERSION}
+Maintainer: TheBrokenRail <connor24nolan@live.com>
+Description: Minecraft Pi Launcher
+Homepage: https://mcpi.tk
+Architecture: all
+Depends: openjdk-11-jre, minecraft-pi-reborn-virgl | minecraft-pi-reborn-native
