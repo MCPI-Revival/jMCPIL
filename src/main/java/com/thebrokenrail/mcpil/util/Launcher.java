@@ -126,7 +126,6 @@ public class Launcher {
         env.put("MCPI_FEATURES", String.join("|", features));
         env.put("MCPI_RENDER_DISTANCE", renderDistance.name());
         env.put("MCPI_USERNAME", username);
-        builder.environment();
         // Run
         try {
             return builder.start();
