@@ -4,4 +4,4 @@ Maintainer: TheBrokenRail <connor24nolan@live.com>
 Description: Minecraft Pi: Reborn Launcher written in Java
 Homepage: https://mcpirevival.tk
 Architecture: all
-Depends: openjdk-11-jre, minecraft-pi-reborn-virgl | minecraft-pi-reborn-native
+Depends: openjdk-11-jre, minecraft-pi-reborn-virgl | minecraft-pi-reborn-native | mcpirdl, libgtk-3-0
