@@ -1,4 +1,4 @@
-package com.thebrokenrail.mcpil.util;
+package com.thebrokenrail.jmcpil.util;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -27,9 +27,10 @@ public class Launcher {
             emvList.add(entry.getKey() + '=' + entry.getValue());
         }
 
+        // Run
         String result;
         try {
-            Process process = Runtime.getRuntime().exec(new String[]{"/usr/bin/minecraft-pi", "--print-features"}, emvList.toArray(new String[0]));
+            Process process = Runtime.getRuntime().exec(new String[]{"minecraft-pi-reborn-client", "--print-available-feature-flags"}, emvList.toArray(new String[0]));
 
             StringBuilder builder = new StringBuilder();
             try (Reader reader = new BufferedReader(new InputStreamReader(process.getInputStream()))) {
@@ -48,57 +49,16 @@ public class Launcher {
             throw new RuntimeException(e);
         }
 
-        int stage = 0;
-        int skip = 0;
-        boolean escaped = false;
-        boolean currentDefault = false;
-        String currentName = "";
-        for (char part : result.toCharArray()) {
-            if (skip > 0) {
-                skip--;
-                continue;
-            }
-            if (stage == 0) {
-                if (part == 'T') {
-                    currentDefault = true;
-                    skip = 3;
-                    stage++;
-                } else if (part == 'F') {
-                    currentDefault = false;
-                    skip = 4;
-                    stage++;
-                } else if (part != ' ' && part != '\n') {
+        // Read Flags
+        for (String line : result.split("\n")) {
+            if (line.length() > 0) {
+                if (line.startsWith("TRUE ")) {
+                    out.put(line.substring(5), true);
+                } else if (line.startsWith("FALSE ")) {
+                    out.put(line.substring(6), false);
+                } else {
                     throw new UnsupportedOperationException();
                 }
-            } else if (stage == 1) {
-                if (part == '\'') {
-                    stage++;
-                }
-            } else if (stage == 2) {
-                boolean isEscaped = false;
-                if (part == '\\') {
-                    escaped = true;
-                } else if (escaped) {
-                    isEscaped = true;
-                    escaped = false;
-                    if (part == 'n') {
-                        // Hide Newline
-                        part = ' ';
-                    } else if (part == 't') {
-                        // Add Tab
-                        part = '\t';
-                    }
-                }
-                if (part == '\'' && !isEscaped) {
-                    out.put(currentName, currentDefault);
-                    currentName = "";
-                    currentDefault = false;
-                    stage = 0;
-                } else {
-                    currentName += part;
-                }
-            } else {
-                throw new UnsupportedOperationException();
             }
         }
 
@@ -119,11 +79,11 @@ public class Launcher {
      */
     public static Process run(List<String> features, RenderDistance renderDistance, String username) {
         // Prepare
-        ProcessBuilder builder = new ProcessBuilder("/usr/bin/minecraft-pi");
+        ProcessBuilder builder = new ProcessBuilder("minecraft-pi-reborn-client");
         builder.inheritIO();
         // Prepare Environment
         Map<String, String> env = builder.environment();
-        env.put("MCPI_FEATURES", String.join("|", features));
+        env.put("MCPI_FEATURE_FLAGS", String.join("|", features));
         env.put("MCPI_RENDER_DISTANCE", renderDistance.name());
         env.put("MCPI_USERNAME", username);
         // Run

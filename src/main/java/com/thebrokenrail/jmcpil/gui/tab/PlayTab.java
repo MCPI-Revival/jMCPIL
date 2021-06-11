@@ -1,8 +1,8 @@
-package com.thebrokenrail.mcpil.gui.tab;
+package com.thebrokenrail.jmcpil.gui.tab;
 
-import com.thebrokenrail.mcpil.util.Profile;
-import com.thebrokenrail.mcpil.util.Splash;
-import com.thebrokenrail.mcpil.util.Util;
+import com.thebrokenrail.jmcpil.util.Profile;
+import com.thebrokenrail.jmcpil.util.Splash;
+import com.thebrokenrail.jmcpil.util.Util;
 
 import javax.swing.JComboBox;
 import javax.swing.JLabel;
@@ -40,7 +40,7 @@ public class PlayTab extends JPanel implements ActionListener {
         JTextPane changelog = new JTextPane();
         changelog.setEditable(false);
         changelog.setContentType("text/html");
-        changelog.setText(Util.readFile("/opt/mcpil/CHANGELOG"));
+        changelog.setText(Util.readFile("/opt/jmcpil/CHANGELOG"));
         changelog.setCaretPosition(0);
         JScrollPane scroll = new JScrollPane(changelog);
         scroll.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);

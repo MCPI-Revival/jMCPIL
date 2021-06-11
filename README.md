@@ -3,7 +3,7 @@
 </p>
 
 # jMCPIL
-Proof-Of-Concept MCPIL Rewrite In Java
+MCPIL Rewrite In Java
 
 ## Packaging
 ```sh

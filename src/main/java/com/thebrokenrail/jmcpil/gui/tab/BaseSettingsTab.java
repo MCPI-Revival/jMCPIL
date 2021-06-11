@@ -1,6 +1,6 @@
-package com.thebrokenrail.mcpil.gui.tab;
+package com.thebrokenrail.jmcpil.gui.tab;
 
-import com.thebrokenrail.mcpil.util.Util;
+import com.thebrokenrail.jmcpil.util.Util;
 
 import javax.swing.Box;
 import javax.swing.JComponent;

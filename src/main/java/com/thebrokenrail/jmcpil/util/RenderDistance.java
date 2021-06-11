@@ -1,4 +1,4 @@
-package com.thebrokenrail.mcpil.util;
+package com.thebrokenrail.jmcpil.util;
 
 public enum RenderDistance {
     Far,

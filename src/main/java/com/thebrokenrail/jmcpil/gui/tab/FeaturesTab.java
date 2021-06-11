@@ -1,7 +1,7 @@
-package com.thebrokenrail.mcpil.gui.tab;
+package com.thebrokenrail.jmcpil.gui.tab;
 
-import com.thebrokenrail.mcpil.config.Config;
-import com.thebrokenrail.mcpil.util.Launcher;
+import com.thebrokenrail.jmcpil.config.Config;
+import com.thebrokenrail.jmcpil.util.Launcher;
 
 import javax.swing.JCheckBox;
 import javax.swing.JComponent;

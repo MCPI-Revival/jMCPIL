@@ -1,4 +1,4 @@
-package com.thebrokenrail.mcpil.config;
+package com.thebrokenrail.jmcpil.config;
 
 import com.google.gson.Gson;
 

@@ -1,9 +1,9 @@
-package com.thebrokenrail.mcpil;
+package com.thebrokenrail.jmcpil;
 
 import com.formdev.flatlaf.FlatDarculaLaf;
-import com.thebrokenrail.mcpil.config.ConfigHandler;
-import com.thebrokenrail.mcpil.gui.control.MainButtons;
-import com.thebrokenrail.mcpil.gui.tab.MainTabs;
+import com.thebrokenrail.jmcpil.config.ConfigHandler;
+import com.thebrokenrail.jmcpil.gui.control.MainButtons;
+import com.thebrokenrail.jmcpil.gui.tab.MainTabs;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -19,7 +19,7 @@ public class Main {
         FlatDarculaLaf.install();
 
         // Show GUI
-        JFrame frame = new JFrame("MCPIL");
+        JFrame frame = new JFrame("jMCPIL");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         Dimension size = new Dimension(480, 360);
         frame.setMinimumSize(size);

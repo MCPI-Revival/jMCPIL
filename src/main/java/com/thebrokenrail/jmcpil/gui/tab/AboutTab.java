@@ -1,6 +1,6 @@
-package com.thebrokenrail.mcpil.gui.tab;
+package com.thebrokenrail.jmcpil.gui.tab;
 
-import com.thebrokenrail.mcpil.util.Util;
+import com.thebrokenrail.jmcpil.util.Util;
 
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -34,7 +34,7 @@ public class AboutTab extends JPanel {
         add(title, layoutRestrictions);
 
         // Get Version
-        String versionStr = Util.readFile("/opt/mcpil/VERSION");
+        String versionStr = Util.readFile("/opt/jmcpil/VERSION");
         if (versionStr.length() > 0 && Character.isDigit(versionStr.charAt(0))) {
             versionStr = 'v' + versionStr;
         }
@@ -49,7 +49,7 @@ public class AboutTab extends JPanel {
 
         // Add URL
         JLabel url = new JLabel();
-        url.setText("https://github.com/MCPI-Revival/MCPIL");
+        url.setText("https://github.com/MCPI-Revival/jMCPIL");
         url.setForeground(new Color(30, 144, 255));
         url.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
         url.addMouseListener(new MouseListener() {

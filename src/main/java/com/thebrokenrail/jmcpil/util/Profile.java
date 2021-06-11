@@ -1,6 +1,6 @@
-package com.thebrokenrail.mcpil.util;
+package com.thebrokenrail.jmcpil.util;
 
-import com.thebrokenrail.mcpil.config.ConfigHandler;
+import com.thebrokenrail.jmcpil.config.ConfigHandler;
 
 import java.util.Arrays;
 import java.util.Collections;

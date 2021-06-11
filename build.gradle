@@ -10,7 +10,7 @@ repositories {
 }
 
 application {
-    mainClass = 'com.thebrokenrail.mcpil.Main'
+    mainClass = 'com.thebrokenrail.jmcpil.Main'
 }
 
 java {

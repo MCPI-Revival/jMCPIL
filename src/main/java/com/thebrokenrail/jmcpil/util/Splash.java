@@ -1,4 +1,4 @@
-package com.thebrokenrail.mcpil.util;
+package com.thebrokenrail.jmcpil.util;
 
 import java.util.Random;
 

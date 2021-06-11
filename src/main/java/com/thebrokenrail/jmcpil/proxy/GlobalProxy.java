@@ -1,4 +1,4 @@
-package com.thebrokenrail.mcpil.proxy;
+package com.thebrokenrail.jmcpil.proxy;
 
 /**
  * Global Proxy Instance

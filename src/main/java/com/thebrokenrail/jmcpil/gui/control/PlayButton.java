@@ -1,10 +1,10 @@
-package com.thebrokenrail.mcpil.gui.control;
+package com.thebrokenrail.jmcpil.gui.control;
 
-import com.thebrokenrail.mcpil.config.Config;
-import com.thebrokenrail.mcpil.config.ConfigHandler;
-import com.thebrokenrail.mcpil.util.Launcher;
-import com.thebrokenrail.mcpil.util.Profile;
-import com.thebrokenrail.mcpil.util.Util;
+import com.thebrokenrail.jmcpil.config.Config;
+import com.thebrokenrail.jmcpil.config.ConfigHandler;
+import com.thebrokenrail.jmcpil.util.Launcher;
+import com.thebrokenrail.jmcpil.util.Profile;
+import com.thebrokenrail.jmcpil.util.Util;
 
 import javax.swing.JButton;
 import javax.swing.SwingUtilities;

@@ -1,10 +1,10 @@
 [Desktop Entry]
-Name=MCPIL
+Name=jMCPIL
 Comment=Minecraft Pi Launcher
-Icon=/usr/share/pixmaps/mcpil.png
+Icon=/usr/share/pixmaps/jmcpil.png
 StartupNotify=false
-StartupWMClass=com-thebrokenrail-mcpil-Main
-Exec=/usr/bin/mcpil
+StartupWMClass=com-thebrokenrail-jmcpil-Main
+Exec=/usr/bin/jmcpil
 Terminal=false
 Type=Application
 Categories=Application;Game;

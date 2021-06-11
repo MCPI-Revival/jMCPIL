@@ -1,8 +1,8 @@
-package com.thebrokenrail.mcpil.gui.tab;
+package com.thebrokenrail.jmcpil.gui.tab;
 
-import com.thebrokenrail.mcpil.config.Config;
-import com.thebrokenrail.mcpil.proxy.GlobalProxy;
-import com.thebrokenrail.mcpil.util.Util;
+import com.thebrokenrail.jmcpil.config.Config;
+import com.thebrokenrail.jmcpil.proxy.GlobalProxy;
+import com.thebrokenrail.jmcpil.util.Util;
 
 import javax.swing.JComponent;
 import javax.swing.JTextField;

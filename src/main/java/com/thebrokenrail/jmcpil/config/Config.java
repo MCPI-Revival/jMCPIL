@@ -1,7 +1,7 @@
-package com.thebrokenrail.mcpil.config;
+package com.thebrokenrail.jmcpil.config;
 
-import com.thebrokenrail.mcpil.util.RenderDistance;
-import com.thebrokenrail.mcpil.util.Launcher;
+import com.thebrokenrail.jmcpil.util.RenderDistance;
+import com.thebrokenrail.jmcpil.util.Launcher;
 
 import java.util.ArrayList;
 import java.util.HashMap;

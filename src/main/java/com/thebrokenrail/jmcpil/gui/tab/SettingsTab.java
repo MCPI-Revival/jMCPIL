@@ -1,8 +1,8 @@
-package com.thebrokenrail.mcpil.gui.tab;
+package com.thebrokenrail.jmcpil.gui.tab;
 
-import com.thebrokenrail.mcpil.config.Config;
-import com.thebrokenrail.mcpil.util.RenderDistance;
-import com.thebrokenrail.mcpil.util.Util;
+import com.thebrokenrail.jmcpil.config.Config;
+import com.thebrokenrail.jmcpil.util.RenderDistance;
+import com.thebrokenrail.jmcpil.util.Util;
 
 import javax.swing.JCheckBox;
 import javax.swing.JComboBox;

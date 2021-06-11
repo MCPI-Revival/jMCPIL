@@ -1,4 +1,4 @@
-package com.thebrokenrail.mcpil.gui.tab;
+package com.thebrokenrail.jmcpil.gui.tab;
 
 import javax.swing.JTabbedPane;
 
