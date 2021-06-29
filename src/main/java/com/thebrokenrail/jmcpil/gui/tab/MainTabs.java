@@ -12,7 +12,7 @@ public class MainTabs extends JTabbedPane {
         // Add Tabs
         addTab("Play", new PlayTab());
         addTab("Features", new FeaturesTab());
-        addTab("Multiplayer", new MultiplayerTab());
+        addTab("Servers", new ServersTab());
         addTab("Settings", new SettingsTab());
         addTab("About", new AboutTab());
     }

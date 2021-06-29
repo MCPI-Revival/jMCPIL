@@ -23,7 +23,7 @@ public class ConfigHandler {
         return config;
     }
 
-    private static final String CONFIG_FILE = System.getenv("HOME") + "/.mcpil.json";
+    private static final String CONFIG_FILE = System.getenv("HOME") + "/.jmcpil.json";
 
     /**
      * Save Config

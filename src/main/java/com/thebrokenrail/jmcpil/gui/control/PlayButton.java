@@ -35,6 +35,9 @@ public class PlayButton extends JButton implements ActionListener {
     public void actionPerformed(ActionEvent actionEvent) {
         String action = actionEvent.getActionCommand();
         if (action.equals("play") && process == null) {
+            // Save
+            ConfigHandler.save();
+
             // Start MCPI-Reborn
             Config config = ConfigHandler.getConfig();
             process = Launcher.run(Profile.getFeatures(Profile.getCurrentProfile()), config.general.renderDistance, config.general.username);

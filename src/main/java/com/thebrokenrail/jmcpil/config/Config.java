@@ -4,6 +4,8 @@ import com.thebrokenrail.jmcpil.util.RenderDistance;
 import com.thebrokenrail.jmcpil.util.Launcher;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -66,20 +68,7 @@ public class Config {
     public GeneralSettings general = new GeneralSettings();
 
     /**
-     * Multiplayer Settings
+     * Server List Property
      */
-    public static class MultiplayerSettings {
-        /**
-         * Ip Address
-         */
-        public String ip = "thebrokenrail.com";
-        /**
-         * Port
-         */
-        public int port = 19132;
-    }
-    /**
-     * Multiplayer Settings Property
-     */
-    public MultiplayerSettings multiplayer = new MultiplayerSettings();
+    public List<String> servers = new ArrayList<>(Collections.singletonList("thebrokenrail.com"));
 }
