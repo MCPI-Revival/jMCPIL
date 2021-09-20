@@ -70,5 +70,5 @@ public class Config {
     /**
      * Server List Property
      */
-    public List<String> servers = new ArrayList<>(Collections.singletonList("thebrokenrail.com"));
+    public List<String> servers = new ArrayList<>(Collections.singletonList("thebrokenrail.com", "pbptanarchy.tk"));
 }
