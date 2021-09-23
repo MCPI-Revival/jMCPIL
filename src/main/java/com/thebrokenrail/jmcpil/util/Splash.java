@@ -41,6 +41,31 @@ public class Splash {
             "Open-Source!",
             "FREE!",
             "RIP MCPIL-Legacy, 2020-2020"
+            "discord.gg/46ncTz9T"
+            "Awesome Community!"
+            "Awesome!"
+            "Minecraft!"
+            "Now in 3D!"
+            "Pretty!"
+            "Singleplayer!"
+            "Survive!"
+            "Try it!"
+            "你好中国"
+            "한국 안녕하세요!"
+            "日本ハロー！"
+            "Привет Россия!"
+            "Γεια σου Ελλάδα!"
+            "Water proof!"
+            "Supercalifragilisticexpialidocious!"
+            "Pixels!"
+            "Now With Multiplayer!"
+            "Keyboard compatible!"
+            "Exploding creepers!"
+            "Enhanced!"
+            "Don't look directly at the bugs!"
+            "Fantasy!"
+            "Create!"
+            "Casual gaming!"
     };
 
     /**
